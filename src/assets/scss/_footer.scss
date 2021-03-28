@@ -1,0 +1,50 @@
+.footer {
+  background-color: hsl(0, 0%, 98%);
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  text-align: center;
+  padding: 5rem 2rem;
+
+  &__header {
+    border-bottom: 2px solid #e4e4e4;
+
+    &-logo {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__social-icons {
+    margin-bottom: 2rem;
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__main {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+
+    &-col {
+      margin-bottom: 2rem;
+
+      h3 {
+        font-family: "Karla", sans-serif;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $dark-grayish-violet;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+        a {
+          color: $dark-violet;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
