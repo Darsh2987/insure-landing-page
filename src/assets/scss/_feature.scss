@@ -7,8 +7,6 @@
   text-align: center;
 
   &__headline {
-    font-size: 2.5rem;
-    font-weight: 400;
     margin-bottom: 5rem;
 
     &::before {
@@ -33,10 +31,6 @@
         font-size: 1.5rem;
         font-weight: 400;
         margin-bottom: 1rem;
-      }
-
-      p {
-        color: $dark-grayish-violet;
       }
     }
   }
