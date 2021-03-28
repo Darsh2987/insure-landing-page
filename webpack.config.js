@@ -8,7 +8,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: "./src/assets/js/app.js",
   output: {
-    filename: "assets/bundled-script.js",
+    filename: "bundled-script.js",
     path: path.resolve(__dirname, "dist"),
   },
   optimization: {
@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "assets/bundled-styles.css",
+      filename: "bundled-styles.css",
     }),
     new HtmlWebpackPlugin({
       title: "index",
@@ -27,7 +27,7 @@ module.exports = {
       inject: "body",
     }),
     new CopyPlugin({
-      patterns: [{ from: "src/assets/images", to: "assets/images" }],
+      patterns: [{ from: "src/assets/images", to: "images" }],
     }),
   ],
   module: {
@@ -43,21 +43,8 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "./assets/images",
-              publicPath: "assets/images",
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "./assets/fonts",
-              publicPath: "assets/fonts",
+              outputPath: "images",
+              publicPath: "images",
             },
           },
         ],
