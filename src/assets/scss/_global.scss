@@ -26,3 +26,13 @@ p {
 a {
   text-decoration: none;
 }
+
+.button {
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.7rem 1.5rem;
+  background-color: $dark-violet;
+  border: 1.5px solid #fff;
+}
