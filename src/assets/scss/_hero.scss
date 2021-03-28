@@ -1,0 +1,37 @@
+.hero {
+  background-color: $dark-violet;
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__intro {
+    padding: 5rem 1rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__headline {
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 1.3rem;
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.5rem;
+    background-color: $dark-violet;
+    border: 1.5px solid #fff;
+  }
+}
