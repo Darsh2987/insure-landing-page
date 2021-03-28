@@ -1,0 +1,15 @@
+.find-out-more {
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-size: 60%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: $dark-violet;
+  color: #fff;
+  margin: 0 1rem 8rem 1rem;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  &__headline {
+    margin-bottom: 1rem;
+  }
+}
