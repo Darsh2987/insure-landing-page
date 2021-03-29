@@ -17,6 +17,14 @@
   &__social-icons {
     margin-bottom: 2rem;
 
+    svg path:hover {
+      fill: $dark-violet;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
     a:not(:last-child) {
       margin-right: 1rem;
     }
