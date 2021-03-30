@@ -13,3 +13,31 @@
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .find-out-more {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-size: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    text-align: unset;
+
+    &__headline {
+      width: 420px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .find-out-more {
+    &__headline {
+      width: 500px;
+    }
+  }
+}
