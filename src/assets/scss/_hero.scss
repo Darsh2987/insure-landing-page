@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
   .hero {
     &__content-wrapper {
       width: 90%;
@@ -61,12 +61,12 @@
 
     &__intro {
       position: relative;
-      width: 500px;
+      width: 46%;
       text-align: unset;
       padding: 5rem 2rem 5rem 0rem;
 
       &-headline {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
 
         &::before {
@@ -102,7 +102,7 @@
     }
 
     &__inner > .hero__intro-right-bg-pattern-image {
-      top: 74px;
+      top: 73px;
 
       img {
         width: 290px;
@@ -118,12 +118,20 @@
     }
 
     &__image {
-      width: 500px;
+      width: 450px;
+    }
+
+    &__intro {
+      width: 600px;
+
+      &-headline {
+        font-size: 3.5rem;
+      }
     }
 
     &__inner > .hero__intro-right-bg-pattern-image {
       img {
-        width: 340px;
+        width: 315px;
       }
     }
   }
