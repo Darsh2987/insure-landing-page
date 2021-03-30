@@ -45,3 +45,15 @@ ul {
   background-color: $dark-violet;
   border: 1.5px solid #fff;
 }
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
