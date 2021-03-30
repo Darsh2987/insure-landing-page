@@ -44,6 +44,13 @@ ul {
   padding: 0.7rem 1.5rem;
   background-color: $dark-violet;
   border: 1.5px solid #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-violet;
+    background-color: #fff;
+  }
 }
 
 @media screen and (min-width: 900px) {

@@ -48,6 +48,11 @@
           border: 2px solid $dark-violet;
           font-size: 0.8rem;
           font-weight: bold;
+
+          &:hover {
+            color: #fff;
+            background-color: $dark-violet;
+          }
         }
       }
     }
