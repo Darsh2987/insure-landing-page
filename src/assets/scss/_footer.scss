@@ -57,3 +57,27 @@
     }
   }
 }
+
+@media screen and (min-width: 900px) {
+  .footer {
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-size: 500px;
+    text-align: unset;
+
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
