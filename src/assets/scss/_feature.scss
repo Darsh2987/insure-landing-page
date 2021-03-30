@@ -35,3 +35,23 @@
     }
   }
 }
+
+@media screen and (min-width: 900px) {
+  .feature {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: unset;
+    text-align: unset;
+
+    &__headline::before {
+      margin: 11rem 0 2rem 0;
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+}
