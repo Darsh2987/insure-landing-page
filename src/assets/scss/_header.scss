@@ -1,8 +1,10 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
 
   &__close-menu {
     display: none;
@@ -10,5 +12,52 @@
 
   &__nav {
     display: none;
+
+    ul li a {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1rem 0rem;
+    }
+
+    &__hamburger-icon {
+      display: none;
+    }
+
+    &__nav {
+      display: block;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+
+        button {
+          color: $dark-violet;
+          background-color: #fff;
+          border: 2px solid $dark-violet;
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    &__inner {
+      width: 80%;
+    }
   }
 }

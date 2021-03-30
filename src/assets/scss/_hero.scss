@@ -1,7 +1,12 @@
 .hero {
   background-color: $dark-violet;
 
-  &__image {
+  &__inner > .hero__intro-left-bg-pattern-image,
+  &__inner > .hero__intro-right-bg-pattern-image {
+    display: none;
+  }
+
+  &__image img {
     width: 100%;
     display: block;
   }
@@ -11,6 +16,7 @@
     padding: 5rem 1rem;
     color: #fff;
     text-align: center;
+    z-index: 1;
 
     &-left-bg-pattern-image {
       position: absolute;
@@ -33,6 +39,92 @@
     &-description {
       font-size: 0.9rem;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    &__content-wrapper {
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    &__image {
+      order: 2;
+      width: 450px;
+      position: absolute;
+      top: 75px;
+      right: 0;
+    }
+
+    &__intro {
+      position: relative;
+      width: 500px;
+      text-align: unset;
+      padding: 5rem 2rem 5rem 0rem;
+
+      &-headline {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+
+        &::before {
+          content: "";
+          display: flex;
+          width: 150px;
+          margin-bottom: 3rem;
+          background-color: $light-grayish-violet;
+          border: 1px solid $light-grayish-violet;
+        }
+      }
+
+      &-description {
+        font-size: 1.1rem;
+      }
+
+      &-left-bg-pattern-image {
+        display: none;
+      }
+
+      &-right-bg-pattern-image {
+        display: none;
+      }
+    }
+
+    &__inner > .hero__intro-left-bg-pattern-image,
+    &__inner > .hero__intro-right-bg-pattern-image {
+      display: unset;
+    }
+
+    &__inner > .hero__intro-left-bg-pattern-image {
+      top: 360px;
+    }
+
+    &__inner > .hero__intro-right-bg-pattern-image {
+      top: 74px;
+
+      img {
+        width: 290px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    &__content-wrapper {
+      width: 80%;
+    }
+
+    &__image {
+      width: 500px;
+    }
+
+    &__inner > .hero__intro-right-bg-pattern-image {
+      img {
+        width: 340px;
+      }
     }
   }
 }

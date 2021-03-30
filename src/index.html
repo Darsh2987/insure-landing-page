@@ -14,19 +14,21 @@
   <body>
     <!-- Header and Nav -->
     <header class="header">
-      <a class="header__logo" href="/">
-        <img src="./images/logo.svg" alt="Logo" />
-      </a>
-      <img class="header__hamburger-icon" src="./images/icon-hamburger.svg" alt="Menu Icon" />
-      <img class="header__close-menu" src="./images/icon-close.svg" alt="Close Menu Icon" />
-      <nav class="header__nav">
-        <ul class="header__nav-menu">
-          <li><a class="header__nav-link" href="#">how we work</a></li>
-          <li><a class="header__nav-link" href="#">blog</a></li>
-          <li><a class="header__nav-link" href="#">account</a></li>
-          <li><button class="header__nav-button button">view plans</button></li>
-        </ul>
-      </nav>
+      <div class="header__inner">
+        <a class="header__logo" href="/">
+          <img src="./images/logo.svg" alt="Logo" />
+        </a>
+        <img class="header__hamburger-icon" src="./images/icon-hamburger.svg" alt="Menu Icon" />
+        <img class="header__close-menu" src="./images/icon-close.svg" alt="Close Menu Icon" />
+        <nav class="header__nav">
+          <ul class="header__nav-menu">
+            <li><a class="header__nav-link" href="#">how we work</a></li>
+            <li><a class="header__nav-link" href="#">blog</a></li>
+            <li><a class="header__nav-link" href="#">account</a></li>
+            <li><button class="header__nav-button button">view plans</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- End of Header and Nav -->
 
@@ -34,13 +36,39 @@
     <main class="main">
       <!-- Hero -->
       <section class="hero">
-        <img class="hero__image" src="./images/image-intro-desktop.jpg" alt="Image - Family Walking" />
-        <div class="hero__intro">
-          <img class="hero__intro-left-bg-pattern-image" src="./images/bg-pattern-intro-left-mobile.svg" alt="" />
-          <h1 class="hero__intro-headline">Humanizing your insurance.</h1>
-          <p class="hero__intro-description">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
-          <button class="hero__intro-button button">view plans</button>
-          <img class="hero__intro-right-bg-pattern-image" src="./images/bg-pattern-intro-right-mobile.svg" alt="" />
+        <div class="hero__inner">
+          <picture class="hero__intro-left-bg-pattern-image">
+            <source srcset="./images/bg-pattern-intro-left-desktop.svg" media="(min-width: 1024px)" type="image/jpg" />
+            <img src="./images/bg-pattern-intro-left-mobile.svg" alt="" />
+          </picture>
+
+          <div class="hero__content-wrapper">
+            <picture class="hero__image">
+              <source srcset="./images/image-intro-desktop.jpg" media="(min-width: 1024px)" type="image/jpg" />
+              <img src="./images/image-intro-mobile.jpg" alt="Image - Family Walking" />
+            </picture>
+
+            <div class="hero__intro">
+              <picture class="hero__intro-left-bg-pattern-image">
+                <source srcset="./images/bg-pattern-intro-left-desktop.svg" media="(min-width: 1024px)" type="image/jpg" />
+                <img src="./images/bg-pattern-intro-left-mobile.svg" alt="" />
+              </picture>
+
+              <h1 class="hero__intro-headline">Humanizing your insurance.</h1>
+              <p class="hero__intro-description">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+              <button class="hero__intro-button button">view plans</button>
+
+              <picture class="hero__intro-right-bg-pattern-image">
+                <source srcset="./images/bg-pattern-intro-right-desktop.svg" media="(min-width: 1024px)" type="image/jpg" />
+                <img src="./images/bg-pattern-intro-right-mobile.svg" alt="" />
+              </picture>
+            </div>
+          </div>
+
+          <picture class="hero__intro-right-bg-pattern-image">
+            <source srcset="./images/bg-pattern-intro-right-desktop.svg" media="(min-width: 1024px)" type="image/jpg" />
+            <img src="./images/bg-pattern-intro-right-mobile.svg" alt="" />
+          </picture>
         </div>
       </section>
       <!-- End of Hero -->
