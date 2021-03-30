@@ -66,7 +66,6 @@
       padding: 5rem 2rem 5rem 0rem;
 
       &-headline {
-        font-size: 3rem;
         margin-bottom: 2rem;
 
         &::before {
@@ -119,10 +118,6 @@
 
     &__intro {
       width: 600px;
-
-      &-headline {
-        font-size: 3.5rem;
-      }
     }
 
     &__inner > .hero__intro-right-bg-pattern-image {
