@@ -20,8 +20,20 @@
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 
-    ul li a {
-      text-transform: uppercase;
+    ul {
+      li:not(:last-child) {
+        margin-bottom: 2rem;
+
+        a {
+          font-size: 2rem;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
     }
   }
 }
@@ -44,6 +56,12 @@
 
         li:not(:last-child) {
           margin-right: 1.5rem;
+          margin-bottom: unset;
+
+          a {
+            font-size: unset;
+            color: unset;
+          }
         }
 
         button {
