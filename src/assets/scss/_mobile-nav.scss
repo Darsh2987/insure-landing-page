@@ -1,0 +1,49 @@
+@media screen and (max-width: 899px) {
+  .header {
+    &__hamburger-icon--toggle {
+      display: none;
+    }
+
+    &__close-menu {
+      display: none;
+    }
+
+    &__close-menu--toggle {
+      display: block;
+    }
+
+    &__nav-show {
+      display: flex;
+      left: 0;
+      justify-content: space-around;
+      align-items: center;
+      background: hsl(270, 9%, 17%);
+      z-index: 10;
+      text-align: center;
+
+      ul {
+        li:not(:last-child) {
+          margin-bottom: 2rem;
+
+          a {
+            font-size: 2rem;
+            color: #fff;
+          }
+        }
+
+        button {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    &__hamburger-icon,
+    &__close-menu {
+      display: none;
+    }
+  }
+}
