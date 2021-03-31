@@ -12,6 +12,10 @@
     &__nav-show {
       left: 0;
       background: hsl(270, 9%, 17%);
+      background-image: url("../images/bg-pattern-mobile-nav.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
     }
   }
 }
