@@ -1,9 +1,6 @@
 @media screen and (max-width: 899px) {
   .header {
-    &__hamburger-icon--toggle {
-      display: none;
-    }
-
+    &__hamburger-icon--toggle,
     &__close-menu {
       display: none;
     }
@@ -13,13 +10,8 @@
     }
 
     &__nav-show {
-      display: flex;
       left: 0;
-      justify-content: space-around;
-      align-items: center;
       background: hsl(270, 9%, 17%);
-      z-index: 10;
-      text-align: center;
 
       ul {
         li:not(:last-child) {
